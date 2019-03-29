@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251D553D2249D14700DBE1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D553C2249D14700DBE1AB /* AppDelegate.swift */; };
+		251D553F2249D14700DBE1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D553E2249D14700DBE1AB /* ViewController.swift */; };
+		251D55412249D14800DBE1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251D55402249D14800DBE1AB /* Assets.xcassets */; };
+		251D55442249D14800DBE1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251D55422249D14800DBE1AB /* Main.storyboard */; };
+		251D55502249D14900DBE1AB /* OCR_and_TranslateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D554F2249D14900DBE1AB /* OCR_and_TranslateTests.swift */; };
+		251D555B2249D14900DBE1AB /* OCR_and_TranslateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D555A2249D14900DBE1AB /* OCR_and_TranslateUITests.swift */; };
+		251D55CD2249E36600DBE1AB /* PerformTessaract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D55CC2249E36600DBE1AB /* PerformTessaract.swift */; };
+		251D55D32249F20B00DBE1AB /* SLTesseract.mm in Sources */ = {isa = PBXBuildFile; fileRef = 251D55D22249F20B00DBE1AB /* SLTesseract.mm */; };
+		251D56362249F29100DBE1AB /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 251D56352249F29100DBE1AB /* tessdata */; };
+		251D56852249F3BA00DBE1AB /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D567F2249F3BA00DBE1AB /* libz.a */; };
+		251D56862249F3BA00DBE1AB /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D56802249F3BA00DBE1AB /* libpng.a */; };
+		251D56872249F3BA00DBE1AB /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D56812249F3BA00DBE1AB /* libtiff.a */; };
+		251D56882249F3BA00DBE1AB /* libtesseract.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D56822249F3BA00DBE1AB /* libtesseract.a */; };
+		251D56892249F3BA00DBE1AB /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D56832249F3BA00DBE1AB /* libjpeg.a */; };
+		251D568A2249F3BA00DBE1AB /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D56842249F3BA00DBE1AB /* liblept.a */; };
+		2554A5B3224A08E1005236F3 /* SLScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2554A5B2224A08E0005236F3 /* SLScreenshot.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		251D554C2249D14900DBE1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 251D55312249D14700DBE1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251D55382249D14700DBE1AB;
+			remoteInfo = "OCR and Translate";
+		};
+		251D55572249D14900DBE1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 251D55312249D14700DBE1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251D55382249D14700DBE1AB;
+			remoteInfo = "OCR and Translate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		251D55392249D14700DBE1AB /* OCR and Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR and Translate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251D553C2249D14700DBE1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		251D553E2249D14700DBE1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		251D55402249D14800DBE1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		251D55432249D14800DBE1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		251D55452249D14800DBE1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251D55462249D14800DBE1AB /* OCR_and_Translate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OCR_and_Translate.entitlements; sourceTree = "<group>"; };
+		251D554B2249D14900DBE1AB /* OCR and TranslateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OCR and TranslateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251D554F2249D14900DBE1AB /* OCR_and_TranslateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_and_TranslateTests.swift; sourceTree = "<group>"; };
+		251D55512249D14900DBE1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251D55562249D14900DBE1AB /* OCR and TranslateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OCR and TranslateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		251D555A2249D14900DBE1AB /* OCR_and_TranslateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_and_TranslateUITests.swift; sourceTree = "<group>"; };
+		251D555C2249D14900DBE1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251D556E2249DC3100DBE1AB /* OCR and Translate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCR and Translate-Bridging-Header.h"; sourceTree = "<group>"; };
+		251D55CC2249E36600DBE1AB /* PerformTessaract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformTessaract.swift; sourceTree = "<group>"; };
+		251D55D12249F20B00DBE1AB /* SLTesseract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTesseract.h; sourceTree = "<group>"; };
+		251D55D22249F20B00DBE1AB /* SLTesseract.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLTesseract.mm; sourceTree = "<group>"; };
+		251D56352249F29100DBE1AB /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		251D567F2249F3BA00DBE1AB /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libz.a; sourceTree = "<group>"; };
+		251D56802249F3BA00DBE1AB /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		251D56812249F3BA00DBE1AB /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
+		251D56822249F3BA00DBE1AB /* libtesseract.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtesseract.a; sourceTree = "<group>"; };
+		251D56832249F3BA00DBE1AB /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		251D56842249F3BA00DBE1AB /* liblept.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblept.a; sourceTree = "<group>"; };
+		251D56C82249F4DF00DBE1AB /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		251D56C92249F4DF00DBE1AB /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		251D56CA2249F4DF00DBE1AB /* tiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff.h; sourceTree = "<group>"; };
+		251D56CB2249F4DF00DBE1AB /* tiffvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffvers.h; sourceTree = "<group>"; };
+		251D56CD2249F4DF00DBE1AB /* errcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errcode.h; sourceTree = "<group>"; };
+		251D56CE2249F4DF00DBE1AB /* ltrresultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltrresultiterator.h; sourceTree = "<group>"; };
+		251D56CF2249F4DF00DBE1AB /* pageiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pageiterator.h; sourceTree = "<group>"; };
+		251D56D02249F4DF00DBE1AB /* unicharset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unicharset.h; sourceTree = "<group>"; };
+		251D56D12249F4DF00DBE1AB /* memry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memry.h; sourceTree = "<group>"; };
+		251D56D22249F4DF00DBE1AB /* params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = params.h; sourceTree = "<group>"; };
+		251D56D32249F4DF00DBE1AB /* host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = host.h; sourceTree = "<group>"; };
+		251D56D42249F4DF00DBE1AB /* apitypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apitypes.h; sourceTree = "<group>"; };
+		251D56D52249F4DF00DBE1AB /* osdetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdetect.h; sourceTree = "<group>"; };
+		251D56D62249F4DF00DBE1AB /* renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
+		251D56D72249F4DF00DBE1AB /* publictypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publictypes.h; sourceTree = "<group>"; };
+		251D56D82249F4DF00DBE1AB /* unichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unichar.h; sourceTree = "<group>"; };
+		251D56D92249F4DF00DBE1AB /* ocrclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocrclass.h; sourceTree = "<group>"; };
+		251D56DA2249F4DF00DBE1AB /* resultiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultiterator.h; sourceTree = "<group>"; };
+		251D56DB2249F4DF00DBE1AB /* serialis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serialis.h; sourceTree = "<group>"; };
+		251D56DC2249F4DF00DBE1AB /* fileerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileerr.h; sourceTree = "<group>"; };
+		251D56DD2249F4DF00DBE1AB /* baseapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseapi.h; sourceTree = "<group>"; };
+		251D56DE2249F4DF00DBE1AB /* capi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = capi.h; sourceTree = "<group>"; };
+		251D56DF2249F4DF00DBE1AB /* ndminx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ndminx.h; sourceTree = "<group>"; };
+		251D56E02249F4DF00DBE1AB /* strngs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strngs.h; sourceTree = "<group>"; };
+		251D56E12249F4DF00DBE1AB /* genericvector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericvector.h; sourceTree = "<group>"; };
+		251D56E22249F4DF00DBE1AB /* unicharmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unicharmap.h; sourceTree = "<group>"; };
+		251D56E32249F4DF00DBE1AB /* basedir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basedir.h; sourceTree = "<group>"; };
+		251D56E42249F4DF00DBE1AB /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		251D56E52249F4DF00DBE1AB /* thresholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thresholder.h; sourceTree = "<group>"; };
+		251D56E62249F4DF00DBE1AB /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		251D56E72249F4DF00DBE1AB /* tesscallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tesscallback.h; sourceTree = "<group>"; };
+		251D56E82249F4DF00DBE1AB /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		251D56E92249F4DF00DBE1AB /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		251D56EA2249F4DF00DBE1AB /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		251D56EB2249F4DF00DBE1AB /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		251D56EC2249F4DF00DBE1AB /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		251D56ED2249F4DF00DBE1AB /* tiffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffio.h; sourceTree = "<group>"; };
+		251D56EF2249F4DF00DBE1AB /* dewarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dewarp.h; sourceTree = "<group>"; };
+		251D56F02249F4DF00DBE1AB /* allheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allheaders.h; sourceTree = "<group>"; };
+		251D56F12249F4DF00DBE1AB /* imageio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageio.h; sourceTree = "<group>"; };
+		251D56F22249F4DF00DBE1AB /* bilateral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bilateral.h; sourceTree = "<group>"; };
+		251D56F32249F4DF00DBE1AB /* morph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = morph.h; sourceTree = "<group>"; };
+		251D56F42249F4DF00DBE1AB /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
+		251D56F52249F4DF00DBE1AB /* bbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bbuffer.h; sourceTree = "<group>"; };
+		251D56F62249F4DF00DBE1AB /* jbclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jbclass.h; sourceTree = "<group>"; };
+		251D56F72249F4DF00DBE1AB /* bmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmp.h; sourceTree = "<group>"; };
+		251D56F82249F4DF00DBE1AB /* bmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmf.h; sourceTree = "<group>"; };
+		251D56F92249F4DF00DBE1AB /* recog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recog.h; sourceTree = "<group>"; };
+		251D56FA2249F4DF00DBE1AB /* environ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = environ.h; sourceTree = "<group>"; };
+		251D56FB2249F4DF00DBE1AB /* readbarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readbarcode.h; sourceTree = "<group>"; };
+		251D56FC2249F4DF00DBE1AB /* regutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regutils.h; sourceTree = "<group>"; };
+		251D56FD2249F4DF00DBE1AB /* sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sudoku.h; sourceTree = "<group>"; };
+		251D56FE2249F4DF00DBE1AB /* gplot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gplot.h; sourceTree = "<group>"; };
+		251D56FF2249F4DF00DBE1AB /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		251D57002249F4DF00DBE1AB /* stringcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringcode.h; sourceTree = "<group>"; };
+		251D57012249F4DF00DBE1AB /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		251D57022249F4DF00DBE1AB /* ptra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptra.h; sourceTree = "<group>"; };
+		251D57032249F4DF00DBE1AB /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		251D57042249F4DF00DBE1AB /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		251D57052249F4DF00DBE1AB /* watershed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watershed.h; sourceTree = "<group>"; };
+		251D57062249F4DF00DBE1AB /* ccbord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccbord.h; sourceTree = "<group>"; };
+		251D57072249F4DF00DBE1AB /* alltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alltypes.h; sourceTree = "<group>"; };
+		251D57082249F4DF00DBE1AB /* leptwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leptwin.h; sourceTree = "<group>"; };
+		251D57092249F4DF00DBE1AB /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		251D570A2249F4DF00DBE1AB /* bmfdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmfdata.h; sourceTree = "<group>"; };
+		251D570B2249F4DF00DBE1AB /* pix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pix.h; sourceTree = "<group>"; };
+		251D570C2249F4DF00DBE1AB /* arrayaccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayaccess.h; sourceTree = "<group>"; };
+		251D570D2249F4DF00DBE1AB /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
+		2554A5B1224A08E0005236F3 /* SLScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenshot.h; sourceTree = "<group>"; };
+		2554A5B2224A08E0005236F3 /* SLScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenshot.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		251D55362249D14700DBE1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251D56852249F3BA00DBE1AB /* libz.a in Frameworks */,
+				251D56862249F3BA00DBE1AB /* libpng.a in Frameworks */,
+				251D568A2249F3BA00DBE1AB /* liblept.a in Frameworks */,
+				251D56882249F3BA00DBE1AB /* libtesseract.a in Frameworks */,
+				251D56892249F3BA00DBE1AB /* libjpeg.a in Frameworks */,
+				251D56872249F3BA00DBE1AB /* libtiff.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251D55482249D14900DBE1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251D55532249D14900DBE1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251D55302249D14700DBE1AB = {
+			isa = PBXGroup;
+			children = (
+				251D553B2249D14700DBE1AB /* OCR and Translate */,
+				251D554E2249D14900DBE1AB /* OCR and TranslateTests */,
+				251D55592249D14900DBE1AB /* OCR and TranslateUITests */,
+				251D553A2249D14700DBE1AB /* Products */,
+				251D567E2249F3BA00DBE1AB /* lib */,
+				251D56352249F29100DBE1AB /* tessdata */,
+			);
+			sourceTree = "<group>";
+		};
+		251D553A2249D14700DBE1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				251D55392249D14700DBE1AB /* OCR and Translate.app */,
+				251D554B2249D14900DBE1AB /* OCR and TranslateTests.xctest */,
+				251D55562249D14900DBE1AB /* OCR and TranslateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		251D553B2249D14700DBE1AB /* OCR and Translate */ = {
+			isa = PBXGroup;
+			children = (
+				251D553C2249D14700DBE1AB /* AppDelegate.swift */,
+				251D553E2249D14700DBE1AB /* ViewController.swift */,
+				251D55D12249F20B00DBE1AB /* SLTesseract.h */,
+				251D55D22249F20B00DBE1AB /* SLTesseract.mm */,
+				2554A5B1224A08E0005236F3 /* SLScreenshot.h */,
+				2554A5B2224A08E0005236F3 /* SLScreenshot.m */,
+				251D55CC2249E36600DBE1AB /* PerformTessaract.swift */,
+				251D55402249D14800DBE1AB /* Assets.xcassets */,
+				251D55422249D14800DBE1AB /* Main.storyboard */,
+				251D55452249D14800DBE1AB /* Info.plist */,
+				251D55462249D14800DBE1AB /* OCR_and_Translate.entitlements */,
+				251D556E2249DC3100DBE1AB /* OCR and Translate-Bridging-Header.h */,
+				251D56C72249F4DF00DBE1AB /* include */,
+			);
+			path = "OCR and Translate";
+			sourceTree = "<group>";
+		};
+		251D554E2249D14900DBE1AB /* OCR and TranslateTests */ = {
+			isa = PBXGroup;
+			children = (
+				251D554F2249D14900DBE1AB /* OCR_and_TranslateTests.swift */,
+				251D55512249D14900DBE1AB /* Info.plist */,
+			);
+			path = "OCR and TranslateTests";
+			sourceTree = "<group>";
+		};
+		251D55592249D14900DBE1AB /* OCR and TranslateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				251D555A2249D14900DBE1AB /* OCR_and_TranslateUITests.swift */,
+				251D555C2249D14900DBE1AB /* Info.plist */,
+			);
+			path = "OCR and TranslateUITests";
+			sourceTree = "<group>";
+		};
+		251D567E2249F3BA00DBE1AB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				251D567F2249F3BA00DBE1AB /* libz.a */,
+				251D56802249F3BA00DBE1AB /* libpng.a */,
+				251D56812249F3BA00DBE1AB /* libtiff.a */,
+				251D56822249F3BA00DBE1AB /* libtesseract.a */,
+				251D56832249F3BA00DBE1AB /* libjpeg.a */,
+				251D56842249F3BA00DBE1AB /* liblept.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		251D56C72249F4DF00DBE1AB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				251D56C82249F4DF00DBE1AB /* jpeglib.h */,
+				251D56C92249F4DF00DBE1AB /* jerror.h */,
+				251D56CA2249F4DF00DBE1AB /* tiff.h */,
+				251D56CB2249F4DF00DBE1AB /* tiffvers.h */,
+				251D56CC2249F4DF00DBE1AB /* tesseract */,
+				251D56E82249F4DF00DBE1AB /* png.h */,
+				251D56E92249F4DF00DBE1AB /* pnglibconf.h */,
+				251D56EA2249F4DF00DBE1AB /* pngconf.h */,
+				251D56EB2249F4DF00DBE1AB /* jconfig.h */,
+				251D56EC2249F4DF00DBE1AB /* jmorecfg.h */,
+				251D56ED2249F4DF00DBE1AB /* tiffio.h */,
+				251D56EE2249F4DF00DBE1AB /* leptonica */,
+				251D570D2249F4DF00DBE1AB /* tiffconf.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		251D56CC2249F4DF00DBE1AB /* tesseract */ = {
+			isa = PBXGroup;
+			children = (
+				251D56CD2249F4DF00DBE1AB /* errcode.h */,
+				251D56CE2249F4DF00DBE1AB /* ltrresultiterator.h */,
+				251D56CF2249F4DF00DBE1AB /* pageiterator.h */,
+				251D56D02249F4DF00DBE1AB /* unicharset.h */,
+				251D56D12249F4DF00DBE1AB /* memry.h */,
+				251D56D22249F4DF00DBE1AB /* params.h */,
+				251D56D32249F4DF00DBE1AB /* host.h */,
+				251D56D42249F4DF00DBE1AB /* apitypes.h */,
+				251D56D52249F4DF00DBE1AB /* osdetect.h */,
+				251D56D62249F4DF00DBE1AB /* renderer.h */,
+				251D56D72249F4DF00DBE1AB /* publictypes.h */,
+				251D56D82249F4DF00DBE1AB /* unichar.h */,
+				251D56D92249F4DF00DBE1AB /* ocrclass.h */,
+				251D56DA2249F4DF00DBE1AB /* resultiterator.h */,
+				251D56DB2249F4DF00DBE1AB /* serialis.h */,
+				251D56DC2249F4DF00DBE1AB /* fileerr.h */,
+				251D56DD2249F4DF00DBE1AB /* baseapi.h */,
+				251D56DE2249F4DF00DBE1AB /* capi.h */,
+				251D56DF2249F4DF00DBE1AB /* ndminx.h */,
+				251D56E02249F4DF00DBE1AB /* strngs.h */,
+				251D56E12249F4DF00DBE1AB /* genericvector.h */,
+				251D56E22249F4DF00DBE1AB /* unicharmap.h */,
+				251D56E32249F4DF00DBE1AB /* basedir.h */,
+				251D56E42249F4DF00DBE1AB /* helpers.h */,
+				251D56E52249F4DF00DBE1AB /* thresholder.h */,
+				251D56E62249F4DF00DBE1AB /* platform.h */,
+				251D56E72249F4DF00DBE1AB /* tesscallback.h */,
+			);
+			path = tesseract;
+			sourceTree = "<group>";
+		};
+		251D56EE2249F4DF00DBE1AB /* leptonica */ = {
+			isa = PBXGroup;
+			children = (
+				251D56EF2249F4DF00DBE1AB /* dewarp.h */,
+				251D56F02249F4DF00DBE1AB /* allheaders.h */,
+				251D56F12249F4DF00DBE1AB /* imageio.h */,
+				251D56F22249F4DF00DBE1AB /* bilateral.h */,
+				251D56F32249F4DF00DBE1AB /* morph.h */,
+				251D56F42249F4DF00DBE1AB /* endianness.h */,
+				251D56F52249F4DF00DBE1AB /* bbuffer.h */,
+				251D56F62249F4DF00DBE1AB /* jbclass.h */,
+				251D56F72249F4DF00DBE1AB /* bmp.h */,
+				251D56F82249F4DF00DBE1AB /* bmf.h */,
+				251D56F92249F4DF00DBE1AB /* recog.h */,
+				251D56FA2249F4DF00DBE1AB /* environ.h */,
+				251D56FB2249F4DF00DBE1AB /* readbarcode.h */,
+				251D56FC2249F4DF00DBE1AB /* regutils.h */,
+				251D56FD2249F4DF00DBE1AB /* sudoku.h */,
+				251D56FE2249F4DF00DBE1AB /* gplot.h */,
+				251D56FF2249F4DF00DBE1AB /* list.h */,
+				251D57002249F4DF00DBE1AB /* stringcode.h */,
+				251D57012249F4DF00DBE1AB /* array.h */,
+				251D57022249F4DF00DBE1AB /* ptra.h */,
+				251D57032249F4DF00DBE1AB /* stack.h */,
+				251D57042249F4DF00DBE1AB /* heap.h */,
+				251D57052249F4DF00DBE1AB /* watershed.h */,
+				251D57062249F4DF00DBE1AB /* ccbord.h */,
+				251D57072249F4DF00DBE1AB /* alltypes.h */,
+				251D57082249F4DF00DBE1AB /* leptwin.h */,
+				251D57092249F4DF00DBE1AB /* queue.h */,
+				251D570A2249F4DF00DBE1AB /* bmfdata.h */,
+				251D570B2249F4DF00DBE1AB /* pix.h */,
+				251D570C2249F4DF00DBE1AB /* arrayaccess.h */,
+			);
+			path = leptonica;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		251D55382249D14700DBE1AB /* OCR and Translate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251D555F2249D14900DBE1AB /* Build configuration list for PBXNativeTarget "OCR and Translate" */;
+			buildPhases = (
+				251D55352249D14700DBE1AB /* Sources */,
+				251D55362249D14700DBE1AB /* Frameworks */,
+				251D55372249D14700DBE1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OCR and Translate";
+			productName = "OCR and Translate";
+			productReference = 251D55392249D14700DBE1AB /* OCR and Translate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		251D554A2249D14900DBE1AB /* OCR and TranslateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251D55622249D14900DBE1AB /* Build configuration list for PBXNativeTarget "OCR and TranslateTests" */;
+			buildPhases = (
+				251D55472249D14900DBE1AB /* Sources */,
+				251D55482249D14900DBE1AB /* Frameworks */,
+				251D55492249D14900DBE1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				251D554D2249D14900DBE1AB /* PBXTargetDependency */,
+			);
+			name = "OCR and TranslateTests";
+			productName = "OCR and TranslateTests";
+			productReference = 251D554B2249D14900DBE1AB /* OCR and TranslateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		251D55552249D14900DBE1AB /* OCR and TranslateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251D55652249D14900DBE1AB /* Build configuration list for PBXNativeTarget "OCR and TranslateUITests" */;
+			buildPhases = (
+				251D55522249D14900DBE1AB /* Sources */,
+				251D55532249D14900DBE1AB /* Frameworks */,
+				251D55542249D14900DBE1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				251D55582249D14900DBE1AB /* PBXTargetDependency */,
+			);
+			name = "OCR and TranslateUITests";
+			productName = "OCR and TranslateUITests";
+			productReference = 251D55562249D14900DBE1AB /* OCR and TranslateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		251D55312249D14700DBE1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Peter XU";
+				TargetAttributes = {
+					251D55382249D14700DBE1AB = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					251D554A2249D14900DBE1AB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 251D55382249D14700DBE1AB;
+					};
+					251D55552249D14900DBE1AB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 251D55382249D14700DBE1AB;
+					};
+				};
+			};
+			buildConfigurationList = 251D55342249D14700DBE1AB /* Build configuration list for PBXProject "OCR and Translate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 251D55302249D14700DBE1AB;
+			productRefGroup = 251D553A2249D14700DBE1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				251D55382249D14700DBE1AB /* OCR and Translate */,
+				251D554A2249D14900DBE1AB /* OCR and TranslateTests */,
+				251D55552249D14900DBE1AB /* OCR and TranslateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		251D55372249D14700DBE1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251D55412249D14800DBE1AB /* Assets.xcassets in Resources */,
+				251D55442249D14800DBE1AB /* Main.storyboard in Resources */,
+				251D56362249F29100DBE1AB /* tessdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251D55492249D14900DBE1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251D55542249D14900DBE1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		251D55352249D14700DBE1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251D553F2249D14700DBE1AB /* ViewController.swift in Sources */,
+				251D553D2249D14700DBE1AB /* AppDelegate.swift in Sources */,
+				251D55CD2249E36600DBE1AB /* PerformTessaract.swift in Sources */,
+				251D55D32249F20B00DBE1AB /* SLTesseract.mm in Sources */,
+				2554A5B3224A08E1005236F3 /* SLScreenshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251D55472249D14900DBE1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251D55502249D14900DBE1AB /* OCR_and_TranslateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251D55522249D14900DBE1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251D555B2249D14900DBE1AB /* OCR_and_TranslateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		251D554D2249D14900DBE1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 251D55382249D14700DBE1AB /* OCR and Translate */;
+			targetProxy = 251D554C2249D14900DBE1AB /* PBXContainerItemProxy */;
+		};
+		251D55582249D14900DBE1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 251D55382249D14700DBE1AB /* OCR and Translate */;
+			targetProxy = 251D55572249D14900DBE1AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		251D55422249D14800DBE1AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251D55432249D14800DBE1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		251D555D2249D14900DBE1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		251D555E2249D14900DBE1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		251D55602249D14900DBE1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "OCR and Translate/OCR_and_Translate.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVP4U92382;
+				INFOPLIST_FILE = "OCR and Translate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/include/lib",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterx.OCR-and-Translate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCR and Translate/OCR and Translate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		251D55612249D14900DBE1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "OCR and Translate/OCR_and_Translate.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVP4U92382;
+				INFOPLIST_FILE = "OCR and Translate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/include/lib",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterx.OCR-and-Translate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCR and Translate/OCR and Translate-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		251D55632249D14900DBE1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVP4U92382;
+				INFOPLIST_FILE = "OCR and TranslateTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterx.OCR-and-TranslateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCR and Translate.app/Contents/MacOS/OCR and Translate";
+			};
+			name = Debug;
+		};
+		251D55642249D14900DBE1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVP4U92382;
+				INFOPLIST_FILE = "OCR and TranslateTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterx.OCR-and-TranslateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCR and Translate.app/Contents/MacOS/OCR and Translate";
+			};
+			name = Release;
+		};
+		251D55662249D14900DBE1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVP4U92382;
+				INFOPLIST_FILE = "OCR and TranslateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterx.OCR-and-TranslateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "OCR and Translate";
+			};
+			name = Debug;
+		};
+		251D55672249D14900DBE1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVP4U92382;
+				INFOPLIST_FILE = "OCR and TranslateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterx.OCR-and-TranslateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "OCR and Translate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		251D55342249D14700DBE1AB /* Build configuration list for PBXProject "OCR and Translate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251D555D2249D14900DBE1AB /* Debug */,
+				251D555E2249D14900DBE1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251D555F2249D14900DBE1AB /* Build configuration list for PBXNativeTarget "OCR and Translate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251D55602249D14900DBE1AB /* Debug */,
+				251D55612249D14900DBE1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251D55622249D14900DBE1AB /* Build configuration list for PBXNativeTarget "OCR and TranslateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251D55632249D14900DBE1AB /* Debug */,
+				251D55642249D14900DBE1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251D55652249D14900DBE1AB /* Build configuration list for PBXNativeTarget "OCR and TranslateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251D55662249D14900DBE1AB /* Debug */,
+				251D55672249D14900DBE1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 251D55312249D14700DBE1AB /* Project object */;
+}
