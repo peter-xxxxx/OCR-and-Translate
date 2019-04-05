@@ -14,6 +14,8 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        progressingIndicator.isDisplayedWhenStopped = false
+        progressingIndicator.isIndeterminate = true
     }
 
     override var representedObject: Any? {
@@ -22,6 +24,7 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBOutlet weak var progressingIndicator: NSProgressIndicator!
     @IBOutlet weak var capturedImageVIew: NSImageView!
     
     @IBOutlet var resultTextView: NSTextView!
@@ -30,10 +33,32 @@ class ViewController: NSViewController {
     
     @IBAction func testButtonClicked(_ sender: Any) {
         capturedImageVIew.image = scrst?.screenshotTo300dpiNSImageFromUpperLeftNoAug()
-        if (capturedImageVIew!.image != nil) {
-            let answer = imageToText(capturedImageVIew.image!)
-            resultTextView.string = answer ?? "NONE (ERROR) (:"
+        let queue = DispatchQueue(label: "ocr_work")
+        if (self.capturedImageVIew!.image != nil) {
+            let image = self.capturedImageVIew.image!
+            queue.async {
+                DispatchQueue.main.async {
+                    self.progressingIndicator.startAnimation(sender)
+                }
+                
+                let answer = imageToText(image)
+                
+                DispatchQueue.main.async {
+                    self.progressingIndicator.stopAnimation(sender)
+                    self.resultTextView.string = answer ?? "NONE (ERROR) (:"
+                }
+            }
+            
+            
         }
+        
+//        progressingIndicator.startAnimation(sender)
+//        if (capturedImageVIew!.image != nil) {
+//            let answer = imageToText(capturedImageVIew.image!)
+//            resultTextView.string = answer ?? "NONE (ERROR) (:"
+//        }
+//        progressingIndicator.stopAnimation(sender)
+        
     }
     @IBAction func selectAreaClicked(_ sender: Any) {
 //        let task = Process()
