@@ -13,7 +13,7 @@
 		251D55442249D14800DBE1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251D55422249D14800DBE1AB /* Main.storyboard */; };
 		251D55502249D14900DBE1AB /* OCR_and_TranslateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D554F2249D14900DBE1AB /* OCR_and_TranslateTests.swift */; };
 		251D555B2249D14900DBE1AB /* OCR_and_TranslateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D555A2249D14900DBE1AB /* OCR_and_TranslateUITests.swift */; };
-		251D55CD2249E36600DBE1AB /* PerformTessaract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D55CC2249E36600DBE1AB /* PerformTessaract.swift */; };
+		251D55CD2249E36600DBE1AB /* PerformTesseract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D55CC2249E36600DBE1AB /* PerformTesseract.swift */; };
 		251D55D32249F20B00DBE1AB /* SLTesseract.mm in Sources */ = {isa = PBXBuildFile; fileRef = 251D55D22249F20B00DBE1AB /* SLTesseract.mm */; };
 		251D56362249F29100DBE1AB /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 251D56352249F29100DBE1AB /* tessdata */; };
 		251D56852249F3BA00DBE1AB /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D567F2249F3BA00DBE1AB /* libz.a */; };
@@ -23,6 +23,10 @@
 		251D56892249F3BA00DBE1AB /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D56832249F3BA00DBE1AB /* libjpeg.a */; };
 		251D568A2249F3BA00DBE1AB /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D56842249F3BA00DBE1AB /* liblept.a */; };
 		2554A5B3224A08E1005236F3 /* SLScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2554A5B2224A08E0005236F3 /* SLScreenshot.m */; };
+		25B44E3D22584E63003073EA /* NetworkReqTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B44E3C22584E63003073EA /* NetworkReqTranslate.swift */; };
+		25B44E3F225A667A003073EA /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B44E3E225A667A003073EA /* PreferenceViewController.swift */; };
+		25B44E42225A8B8A003073EA /* SwiftGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B44E40225A8B89003073EA /* SwiftGoogleTranslate.swift */; };
+		25B44E43225A8B8A003073EA /* YandexTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B44E41225A8B8A003073EA /* YandexTranslate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +61,7 @@
 		251D555A2249D14900DBE1AB /* OCR_and_TranslateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_and_TranslateUITests.swift; sourceTree = "<group>"; };
 		251D555C2249D14900DBE1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		251D556E2249DC3100DBE1AB /* OCR and Translate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCR and Translate-Bridging-Header.h"; sourceTree = "<group>"; };
-		251D55CC2249E36600DBE1AB /* PerformTessaract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformTessaract.swift; sourceTree = "<group>"; };
+		251D55CC2249E36600DBE1AB /* PerformTesseract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformTesseract.swift; sourceTree = "<group>"; };
 		251D55D12249F20B00DBE1AB /* SLTesseract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTesseract.h; sourceTree = "<group>"; };
 		251D55D22249F20B00DBE1AB /* SLTesseract.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLTesseract.mm; sourceTree = "<group>"; };
 		251D56352249F29100DBE1AB /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
@@ -137,6 +141,10 @@
 		251D570D2249F4DF00DBE1AB /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
 		2554A5B1224A08E0005236F3 /* SLScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenshot.h; sourceTree = "<group>"; };
 		2554A5B2224A08E0005236F3 /* SLScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenshot.m; sourceTree = "<group>"; };
+		25B44E3C22584E63003073EA /* NetworkReqTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReqTranslate.swift; sourceTree = "<group>"; };
+		25B44E3E225A667A003073EA /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		25B44E40225A8B89003073EA /* SwiftGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGoogleTranslate.swift; sourceTree = "<group>"; };
+		25B44E41225A8B8A003073EA /* YandexTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexTranslate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,13 +203,17 @@
 		251D553B2249D14700DBE1AB /* OCR and Translate */ = {
 			isa = PBXGroup;
 			children = (
+				25B44E40225A8B89003073EA /* SwiftGoogleTranslate.swift */,
+				25B44E41225A8B8A003073EA /* YandexTranslate.swift */,
 				251D553C2249D14700DBE1AB /* AppDelegate.swift */,
 				251D553E2249D14700DBE1AB /* ViewController.swift */,
+				25B44E3C22584E63003073EA /* NetworkReqTranslate.swift */,
+				25B44E3E225A667A003073EA /* PreferenceViewController.swift */,
+				251D55CC2249E36600DBE1AB /* PerformTesseract.swift */,
 				251D55D12249F20B00DBE1AB /* SLTesseract.h */,
 				251D55D22249F20B00DBE1AB /* SLTesseract.mm */,
 				2554A5B1224A08E0005236F3 /* SLScreenshot.h */,
 				2554A5B2224A08E0005236F3 /* SLScreenshot.m */,
-				251D55CC2249E36600DBE1AB /* PerformTessaract.swift */,
 				251D55402249D14800DBE1AB /* Assets.xcassets */,
 				251D55422249D14800DBE1AB /* Main.storyboard */,
 				251D55452249D14800DBE1AB /* Info.plist */,
@@ -403,6 +415,11 @@
 					251D55382249D14700DBE1AB = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					251D554A2249D14900DBE1AB = {
 						CreatedOnToolsVersion = 10.1;
@@ -468,10 +485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B44E3D22584E63003073EA /* NetworkReqTranslate.swift in Sources */,
 				251D553F2249D14700DBE1AB /* ViewController.swift in Sources */,
+				25B44E43225A8B8A003073EA /* YandexTranslate.swift in Sources */,
 				251D553D2249D14700DBE1AB /* AppDelegate.swift in Sources */,
-				251D55CD2249E36600DBE1AB /* PerformTessaract.swift in Sources */,
+				251D55CD2249E36600DBE1AB /* PerformTesseract.swift in Sources */,
 				251D55D32249F20B00DBE1AB /* SLTesseract.mm in Sources */,
+				25B44E42225A8B8A003073EA /* SwiftGoogleTranslate.swift in Sources */,
+				25B44E3F225A667A003073EA /* PreferenceViewController.swift in Sources */,
 				2554A5B3224A08E1005236F3 /* SLScreenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

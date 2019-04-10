@@ -22,6 +22,13 @@ class OCR_and_TranslateTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let tra = TranslateServices[0].shared
+        tra.start(with: "123")
+        tra.translate("hola", "en", ""){ (text, error) in
+            if let t = text {
+                print(t)
+            }
+        }
     }
 
     func testPerformanceExample() {

@@ -16,6 +16,8 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         progressingIndicator.isDisplayedWhenStopped = false
         progressingIndicator.isIndeterminate = true
+        let defaults = UserDefaults.standard
+        targetLanguageTextView.stringValue = defaults.string(forKey: "TranslateTarget") ?? ""
     }
 
     override var representedObject: Any? {
@@ -26,12 +28,12 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var progressingIndicator: NSProgressIndicator!
     @IBOutlet weak var capturedImageVIew: NSImageView!
-    
     @IBOutlet var resultTextView: NSTextView!
+    @IBOutlet weak var targetLanguageTextView: NSTextField!
     
     let scrst = SLScreenshot()
     
-    @IBAction func testButtonClicked(_ sender: Any) {
+    @IBAction func OCRButtonClicked(_ sender: Any) {
         capturedImageVIew.image = scrst?.screenshotTo300dpiNSImageFromUpperLeftNoAug()
         let queue = DispatchQueue(label: "ocr_work")
         if (self.capturedImageVIew!.image != nil) {
@@ -41,7 +43,7 @@ class ViewController: NSViewController {
                     self.progressingIndicator.startAnimation(sender)
                 }
                 
-                let answer = imageToText(image)
+                let answer = PerformTesseract.imageToText(image)
                 
                 DispatchQueue.main.async {
                     self.progressingIndicator.stopAnimation(sender)
@@ -89,5 +91,27 @@ class ViewController: NSViewController {
         
     }
     
+    @IBAction func translateButtonClicked(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        
+        let tra = TranslateServices[defaults.integer(forKey: "SelectedService")].shared
+        tra.start(with: defaults.string(forKey: "APIKey") ?? "")
+        let queue = DispatchQueue(label: "translate_work")
+        let tobetr = self.resultTextView.string
+        queue.async {
+            tra.translate(tobetr, defaults.string(forKey: "TranslateTarget") ?? "", ""){ (text, error) in
+                if let t = text {
+                    DispatchQueue.main.async {
+                        self.resultTextView.string += "\n" + t
+                    }
+                }
+            }
+        }
+    }
+    
+    @IBAction func editTranslateTargetLaguage(_ sender: NSTextField) {
+        let defaults = UserDefaults.standard
+        defaults.set(sender.stringValue, forKey: "TranslateTarget")
+    }
 }
 
