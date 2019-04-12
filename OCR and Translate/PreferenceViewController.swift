@@ -23,11 +23,16 @@ class PreferenceViewController: NSViewController {
 //        APIKeyTextField.stringValue = defaults.string(forKey: "APIKey") ?? ""
         ServiceSelectPopUpButton.selectItem(at: nOfService)
         IntervalTextField.stringValue = defaults.string(forKey: "RepeatInterval") ?? "5"
+        defaults.set(IntervalTextField.integerValue, forKey: "RepeatInterval")
+        OCRLanguageTextField.stringValue = defaults.string(forKey: "OCRLanguages") ?? "eng+jpn+chi_sim"
+        defaults.set(OCRLanguageTextField.stringValue, forKey: "OCRLanguages")
     }
     
     @IBOutlet weak var APIKeyTextField: NSTextField!
     @IBOutlet weak var ServiceSelectPopUpButton: NSPopUpButton!
     @IBOutlet weak var IntervalTextField: NSTextField!
+    @IBOutlet weak var OCRLanguageTextField: NSTextField!
+    
     
     @IBAction func editAPIKeyTextField(_ sender: Any) {
         let defaults = UserDefaults.standard
@@ -68,5 +73,10 @@ class PreferenceViewController: NSViewController {
             defaults.set(5, forKey: "RepeatInterval")
             IntervalTextField.integerValue = 5
         }
+    }
+    
+    @IBAction func OCRLanguageTextEdited(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(OCRLanguageTextField.stringValue, forKey: "OCRLanguages")
     }
 }

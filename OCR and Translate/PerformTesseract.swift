@@ -10,9 +10,9 @@ import Foundation
 import AppKit
 
 public class PerformTesseract {
-    public class func imageToText(_ image: NSImage) -> String? {
+    public class func imageToText(_ image: NSImage, language: String = "eng+jpn+chi_sim") -> String? {
         let ocr = SLTesseract()
-        ocr.language = "eng+jpn+chi_sim"
+        ocr.language = language
         //ocr.charWhitelist = @"1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
         //ocr.charWhitelist = @"1234567890";
         //ocr.charBlacklist = @"1234567890";
