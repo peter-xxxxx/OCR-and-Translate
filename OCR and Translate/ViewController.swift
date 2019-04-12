@@ -31,7 +31,9 @@ class ViewController: NSViewController {
     @IBOutlet var resultTextView: NSTextView!
     @IBOutlet weak var targetLanguageTextView: NSTextField!
     
+    
     let scrst = SLScreenshot()
+    
     
     @IBAction func OCRButtonClicked(_ sender: Any) {
         capturedImageVIew.image = scrst?.screenshotTo300dpiNSImageFromUpperLeftNoAug()
@@ -112,6 +114,10 @@ class ViewController: NSViewController {
     @IBAction func editTranslateTargetLaguage(_ sender: NSTextField) {
         let defaults = UserDefaults.standard
         defaults.set(sender.stringValue, forKey: "TranslateTarget")
+    }
+    
+    @IBAction func repeatCheckClicked(_ sender: Any) {
+        
     }
 }
 

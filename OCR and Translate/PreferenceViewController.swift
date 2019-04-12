@@ -22,10 +22,12 @@ class PreferenceViewController: NSViewController {
         }
 //        APIKeyTextField.stringValue = defaults.string(forKey: "APIKey") ?? ""
         ServiceSelectPopUpButton.selectItem(at: nOfService)
+        IntervalTextField.stringValue = defaults.string(forKey: "RepeatInterval") ?? "5"
     }
     
     @IBOutlet weak var APIKeyTextField: NSTextField!
     @IBOutlet weak var ServiceSelectPopUpButton: NSPopUpButton!
+    @IBOutlet weak var IntervalTextField: NSTextField!
     
     @IBAction func editAPIKeyTextField(_ sender: Any) {
         let defaults = UserDefaults.standard
@@ -41,6 +43,7 @@ class PreferenceViewController: NSViewController {
         }
         defaults.set(APIKeyTextField.stringValue, forKey: "APIKey")
     }
+    
     @IBAction func changeServiceSelectPopUpButton(_ sender: Any) {
         let defaults = UserDefaults.standard
         let nOfService = ServiceSelectPopUpButton.indexOfSelectedItem
@@ -53,6 +56,17 @@ class PreferenceViewController: NSViewController {
         } else {
             APIKeyTextField.stringValue = ""
             defaults.set(APIKeyTextField.stringValue, forKey: "APIKey")
+        }
+    }
+    
+    @IBAction func repeatIntervelTextEdited(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        if IntervalTextField.integerValue >= 5 {
+            defaults.set(IntervalTextField.integerValue, forKey: "RepeatInterval")
+        }
+        else {
+            defaults.set(5, forKey: "RepeatInterval")
+            IntervalTextField.integerValue = 5
         }
     }
 }

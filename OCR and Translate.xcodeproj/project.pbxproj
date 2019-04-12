@@ -187,6 +187,7 @@
 				251D553A2249D14700DBE1AB /* Products */,
 				251D567E2249F3BA00DBE1AB /* lib */,
 				251D56352249F29100DBE1AB /* tessdata */,
+				257B9DC2225E767B007C872C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -346,6 +347,13 @@
 			path = leptonica;
 			sourceTree = "<group>";
 		};
+		257B9DC2225E767B007C872C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,6 +424,15 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.GameCenter.Mac = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
 							com.apple.Sandbox = {
 								enabled = 1;
 							};
