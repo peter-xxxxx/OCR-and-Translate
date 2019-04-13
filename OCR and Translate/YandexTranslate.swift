@@ -1,3 +1,11 @@
+//
+//  YandexTranslate.swift
+//  OCR and Translate
+//
+//  Created by Peter XU on 3/29/19.
+//  Copyright © 2019 Peter XU. All rights reserved.
+//
+
 import Foundation
 
 public class YandexTranslate: BaseTranslate {

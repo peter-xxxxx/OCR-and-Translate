@@ -22,9 +22,7 @@ class OCR_and_TranslateTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        for (key, value) in UserDefaults.standard.dictionaryRepresentation() {
-            print("\(key) = \(value) \n")
-        }
+        
     }
 
     func testPerformanceExample() {
